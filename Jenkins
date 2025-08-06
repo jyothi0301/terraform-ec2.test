@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-    TF_VAR_aws_access_key = credentials('AWS_Jenkins credentials')
-    TF_VAR_aws_secret_key = credentials('AWS_Jenkins credentials')
+    TF_VAR_aws_access_key = credentials('AWS_Jenkins credentials') // Jenkins credentials ID
+    TF_VAR_aws_secret_key = credentials('AWS_Jenkins credentials') // Jenkins credentials ID
   }
 
   stages {
@@ -40,5 +40,6 @@ pipeline {
   }
 
 }
+
 
 
