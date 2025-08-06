@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
 resource "aws_instance" "Prakash" {
     count = 2
   ami           = "ami-0f918f7e67a3323f0"
@@ -6,4 +10,5 @@ resource "aws_instance" "Prakash" {
   tags = {
     Name = "Terra_EC2-${count.index + 1}"
   }
+
   }
