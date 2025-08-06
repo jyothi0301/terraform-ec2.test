@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/your-org/terraform-ec2.git', branch: 'main'
+        git url: 'https://github.com/jyothi0301/terraform-ec2.test.git', branch: 'main'
       }
     }
 
@@ -38,4 +38,5 @@ pipeline {
       echo 'Pipeline completed.'
     }
   }
+
 }
