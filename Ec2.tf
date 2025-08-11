@@ -3,13 +3,14 @@ provider "aws" {
 }
 
 resource "aws_instance" "Prakash" {
-    count = 2
+    count = 3
   ami           = "ami-0f918f7e67a3323f0"
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Terra_EC2-${count.index + 4}"
+    Name = "Terra_EC2-${count.index + Abhinav 1}"
   }
 
   }
+
 
