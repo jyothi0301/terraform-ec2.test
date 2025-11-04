@@ -8,10 +8,11 @@ resource "aws_instance" "Prakash" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Terra_EC2-${count.index + 1}"
+    Name = "Satya_EC2-${count.index + 1}"
   }
 
   }
+
 
 
 
